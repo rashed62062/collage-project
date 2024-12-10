@@ -7,7 +7,7 @@
     <title>College Admission Form</title>
 </head>
 <body class="bg-gray-100 flex items-center justify-center min-h-screen">
-    <div class="bg-white shadow-md rounded-lg p-8 w-full max-w-3xl">
+    <div class="bg-white shadow-md rounded-lg p-8 w-full h-full">
         <h1 class="text-2xl font-bold text-gray-800 text-center mb-6">College Admission Form</h1>
         <form action="" class="space-y-6">
             <!-- Name -->
@@ -22,6 +22,28 @@
                     placeholder="Enter your full name">
             </div>
 
+<!-- Roll number -->
+ <div>
+                <label for="roll" class="block text-gray-700 font-medium">Roll Number:</label>
+                <input 
+                    type="text" 
+                    id="roll" 
+                    name="roll" 
+                    required 
+                    class="mt-1 w-full border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500"
+                    placeholder="Enter your roll number">
+            </div>
+            <!--  Registration number -->
+              <div>
+                <label for="reg" class="block text-gray-700 font-medium">Registration Number:</label>
+                <input 
+                    type="text" 
+                    id="reg" 
+                    name="reg" 
+                    required 
+                    class="mt-1 w-full border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500"
+                    placeholder="Enter your registration number">
+            </div>
             <!-- Email -->
             <div>
                 <label for="email" class="block text-gray-700 font-medium">Email Address:</label>
@@ -124,6 +146,9 @@
                     type="submit" 
                     class="w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition">
                     Submit Application
+                    <script>
+                        alert("Congratulations your application successfully!");
+                    </script>
                 </button>
             </div>
         </form>
